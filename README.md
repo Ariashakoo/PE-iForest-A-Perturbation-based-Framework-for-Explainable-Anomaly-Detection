@@ -82,7 +82,7 @@ Sensitivity and Fidelity Analysis (benchmark_fidelity.py)
 Utilizing the Credit Card Fraud dataset, this script isolates the top 100 anomalies detected by an Isolation Forest. It then conducts a sensitivity analysis to determine how the choice of baseline replacement value (Global Mean, Global Median, or Zero) impacts the overall fidelity score. Fidelity is measured by calculating the maximum positive gain (movement towards normality) in the model's decision function after perturbation.
 
 
-Citation
+# Citation
 If you find this code useful in your research, please consider citing the paper:
 ```
 تکه‌کد
