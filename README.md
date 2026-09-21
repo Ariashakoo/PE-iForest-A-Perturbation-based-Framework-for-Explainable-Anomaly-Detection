@@ -25,7 +25,7 @@ This codebase introduces a **Vectorized Perturbation Framework**. Instead of loo
 This methodology not only exponentially accelerates the explanation generation for Isolation Forests but is also proven to be model-agnostic, seamlessly accelerating explanations for One-Class SVMs and Local Outlier Factor (LOF) models.
 
 ## Repository Structure
-
+```
 pe-framework/
 ├── requirements.txt           # Python dependencies
 ├── data/
@@ -41,6 +41,7 @@ pe-framework/
 │   └── benchmark_fidelity.py  # Reproduces sensitivity analysis comparing Mean, Median, and Zero baselines
 ├── main.py                    # Master execution orchestrator
 └── README.md
+```
 Installation
 Clone the repository:
 
