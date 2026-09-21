@@ -44,13 +44,15 @@ pe-framework/
 Installation
 Clone the repository:
 
-# Bash
+``` Bash
 git clone [https://github.com/Ariashakoo/PE-iForest-A-Perturbation-based-Framework-for-Explainable-Anomaly-Detection.git](https://github.com/Ariashakoo/PE-iForest-A-Perturbation-based-Framework-for-Explainable-Anomaly-Detection.git)
 cd pe-framework
+```
 Install the dependencies:
 
-# Bash
+``` Bash
 pip install -r requirements.txt
+```
 Dataset Configuration
 Create a directory named datasets/ in the root of the repository and place the following required benchmark files inside:
 
@@ -67,8 +69,9 @@ Note: If executing within a Google Colab environment, you may modify the DATA_PA
 Usage
 To execute the full benchmarking suite, run the orchestrator script:
 
-Bash
+```Bash
 python main.py
+```
 Execution Details
 The pipeline will execute two distinct phases:
 
@@ -77,3 +80,22 @@ The script loads the benchmark datasets, applies standard scaling, and initializ
 
 Sensitivity and Fidelity Analysis (benchmark_fidelity.py)
 Utilizing the Credit Card Fraud dataset, this script isolates the top 100 anomalies detected by an Isolation Forest. It then conducts a sensitivity analysis to determine how the choice of baseline replacement value (Global Mean, Global Median, or Zero) impacts the overall fidelity score. Fidelity is measured by calculating the maximum positive gain (movement towards normality) in the model's decision function after perturbation.
+
+
+Citation
+If you find this code useful in your research, please consider citing the paper:
+```
+تکه‌کد
+@INPROCEEDINGS{11620789,
+  author={Shakoo, Aria and Riahi-Madvar, Mahboobeh},
+  booktitle={2026 International Interdisciplinary Conference on Artificial Intelligence: Engineering, Health, Finance and Humanities (IICAI)}, 
+  title={PE-iForest: A Perturbation-based Framework for Explainable Anomaly Detection}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Modeling;Anomaly detection;Printing;Forests;Breast cancer;Algorithms;Conferences;Arrhythmia;Machine learning;Timing;anomaly detection;explainable AI (XAI);Isolation Forest;perturbation explanation;SHAP;DIFFI;scalability},
+  doi={10.1109/IICAI70155.2026.11620789}
+}
+
+```
